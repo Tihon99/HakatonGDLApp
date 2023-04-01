@@ -21,7 +21,7 @@ public class lk extends AppCompatActivity {
         if(data != null){
             score = data.getString("key");
         }else{
-            score = "HUITA";
+            score = "ERROR";
         }
         TextView score1 = (TextView) findViewById(R.id.scoreprint);
         score1.setText(score);
