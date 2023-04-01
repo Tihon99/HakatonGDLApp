@@ -14,12 +14,19 @@ public class lk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lk);
-        Bundle score2 = getIntent().getExtras();
-        String score =  score2.getString("key");
+
+        String score;
+        Intent intentReceived = getIntent();
+        Bundle data = intentReceived.getExtras();
+        if(data != null){
+            score = data.getString("key");
+        }else{
+            score = "HUITA";
+        }
         TextView score1 = (TextView) findViewById(R.id.scoreprint);
         score1.setText(score);
-    }
-    public void goback(View v){
+   }
+    public void goBack(View v){
         Intent intention = new Intent(this,MainActivity.class);
         startActivity(intention);
         finish();

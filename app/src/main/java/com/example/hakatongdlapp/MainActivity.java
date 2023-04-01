@@ -12,26 +12,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void startLK(View v){
-        sendNum();
         Intent intention = new Intent(this,lk.class);
         startActivity(intention);
+        sendNum();
+        finish();
     }
     public void startNovel(View v){
-        sendTxt();
         Intent intention = new Intent(this,Novel.class);
         startActivity(intention);
+        sendTxt();
+        finish();
     }
     public void sendNum(){
-        String value="10";
-        Intent i = new Intent(this, lk.class);
-        i.putExtra("key",value);
-        startActivity(i);
+        Intent intent1 = new Intent (this, lk.class);
+        Bundle data1 = new Bundle();
+        data1.putString("key","restaurantUsername");
+        intent1.putExtras(data1);
+        startActivity(intent1);
     }
     public void sendTxt(){
-        String value="novel1.txt";
-        Intent i = new Intent(this, Novel.class);
-        i.putExtra("tag",value);
-        startActivity(i);
+        Intent intent1 = new Intent (this, Novel.class);
+        Bundle data1 = new Bundle();
+        data1.putString("tag","novel1.txt");
+        intent1.putExtras(data1);
+        startActivity(intent1);
     }
 
 }
