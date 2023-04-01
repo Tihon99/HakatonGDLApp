@@ -40,8 +40,8 @@ public class Novel extends AppCompatActivity {
         partNovel = getIntent().getStringExtra("tag");
 
         String lines[] = readFile(partNovel); //массив с текстом
-
-        textNovella.setText(lines[0]); //вывод первого текста на экран
+        Log.d("Lines",lines[0]);
+        textNovella.setText("sdsaidfhasoifi"); //вывод первого текста на экран
 
         buttonRight.setOnClickListener(v -> {
             Log.d("linesi", "" + i);
