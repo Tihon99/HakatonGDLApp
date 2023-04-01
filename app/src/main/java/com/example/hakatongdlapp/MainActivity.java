@@ -19,4 +19,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intention = new Intent(this,Novel.class);
         startActivity(intention);
     }
+    public void sendNum(View v){
+        String value="10";
+        Intent i = new Intent(this, lk.class);
+        i.putExtra("key",value);
+        startActivity(i);
+    }
 }
