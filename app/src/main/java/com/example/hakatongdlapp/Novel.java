@@ -66,6 +66,11 @@ public class Novel extends AppCompatActivity {
 
 
         buttonLeft.setOnClickListener(v -> {
+            if (i == 0) {
+                Intent intent1 = new Intent(this, MainActivity.class);
+                startActivity(intent1);
+                finish();
+            }
             if (i > 0) {
                 buttonRight.setText("вперёд");
                 //buttonRight.setBackground(getResources().getDrawable(R.drawable.button_slyle_stoke_blue));
