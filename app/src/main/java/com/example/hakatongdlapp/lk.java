@@ -19,11 +19,14 @@ public class lk extends AppCompatActivity {
         TextView score1 = (TextView) findViewById(R.id.scoreprint);
         score1.setText(score);
     }
-    private void goHome(View v){
+    public void goback(View v){
         Intent intention = new Intent(this,MainActivity.class);
         startActivity(intention);
     }
-
+    public void startNovel2(View v){
+        Intent intention = new Intent(this,Novel.class);
+        startActivity(intention);
+    }
 
 
 }

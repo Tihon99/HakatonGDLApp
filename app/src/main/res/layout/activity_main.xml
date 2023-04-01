@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0A2057"
     tools:context=".MainActivity">
 
     <ImageView
@@ -54,20 +55,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/purple_500"
+            android:onClick="startNovel"
             android:text="Button"
-            app:cornerRadius="0sp"
-            android:onClick="startNovel"/>
+            app:cornerRadius="0sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startLK"
         android:text="LK"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="startLK"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
