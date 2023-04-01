@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intention);
     }
     public void startNovel(View v){
+        sendTxt();
         Intent intention = new Intent(this,Novel.class);
         startActivity(intention);
     }
@@ -24,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
         String value="10";
         Intent i = new Intent(this, lk.class);
         i.putExtra("key",value);
+        startActivity(i);
+    }
+    public void sendTxt(){
+        String value="novel1.txt";
+        Intent i = new Intent(this, Novel.class);
+        i.putExtra("tag",value);
         startActivity(i);
     }
 
