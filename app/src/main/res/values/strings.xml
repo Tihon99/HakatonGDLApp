@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">HakatonGDLApp</string>
-    <string name="TextViewname">Григорьев Сергей</string>
+    <string name="TextViewname">Guest</string>
     <string name="scores">Баллов:</string>
 </resources>
