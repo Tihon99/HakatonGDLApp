@@ -15,4 +15,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intention = new Intent(this,lk.class);
         startActivity(intention);
     }
+    public void startNovel(View v){
+        Intent intention = new Intent(this,Novel.class);
+        startActivity(intention);
+    }
 }

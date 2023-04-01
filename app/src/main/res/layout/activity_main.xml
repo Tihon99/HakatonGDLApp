@@ -55,7 +55,8 @@
             android:layout_weight="1"
             android:background="@color/purple_500"
             android:text="Button"
-            app:cornerRadius="0sp" />
+            app:cornerRadius="0sp"
+            android:onClick="startNovel"/>
     </LinearLayout>
 
     <Button
