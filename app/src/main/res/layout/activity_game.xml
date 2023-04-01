@@ -7,7 +7,7 @@
     tools:context=".GameActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -23,6 +23,7 @@
         android:layout_height="390dp"
         android:layout_marginEnd="208dp"
         android:layout_marginBottom="372dp"
+        android:onClick="klickotvet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/qube" />
@@ -40,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="klickotvet"
             app:srcCompat="@drawable/truba3" />
 
         <ImageButton
@@ -47,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="klickotvet"
             app:srcCompat="@drawable/truba3" />
 
         <ImageButton
@@ -54,6 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="klickotvet"
             app:srcCompat="@drawable/truba3" />
     </LinearLayout>
 
