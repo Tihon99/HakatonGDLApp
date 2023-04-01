@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="myyellow">#FAE178</color>
     <color name="myblue">#0A2057</color>
+    <color name="bg_main">#737373</color>
 </resources>
