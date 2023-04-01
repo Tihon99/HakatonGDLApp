@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_main"
     tools:context=".ListNovelActivity">
 
     <LinearLayout
@@ -21,18 +22,24 @@
             android:id="@+id/button_teor1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
+            android:textColor="@color/text_button"
             android:text="Teor 1" />
 
         <Button
             android:id="@+id/button_teor2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
+            android:textColor="@color/text_button"
             android:text="Teor 2" />
 
         <Button
             android:id="@+id/button_teor3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
+            android:textColor="@color/text_button"
             android:text="Teor 3" />
 
     </LinearLayout>
