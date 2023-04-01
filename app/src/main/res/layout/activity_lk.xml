@@ -13,8 +13,8 @@
         android:id="@+id/textView"
         android:layout_width="148dp"
         android:layout_height="64dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
         android:linksClickable="false"
         android:text="@string/TextViewname"
         android:textColor="@color/myyellow"
@@ -28,8 +28,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
         android:text="@string/scores"
         android:textColor="@color/myyellow"
         android:textSize="20sp"
@@ -40,8 +40,8 @@
         android:id="@+id/scoreprint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="168dp"
         android:text="TextView"
         android:textColor="@color/myyellow"
         android:textSize="20sp"
@@ -59,16 +59,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="@color/myblue"
-        android:onClick="goback"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_action_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
