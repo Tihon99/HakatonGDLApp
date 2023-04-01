@@ -24,14 +24,13 @@ public class Novel extends AppCompatActivity {
     AppCompatButton buttonLeft;
 
     String partNovel;
-    int i = 1;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_novel);
-
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         textNovella     =   findViewById(R.id.text_view_novel);
         buttonLeft      =   findViewById(R.id.button_left);
@@ -46,7 +45,7 @@ public class Novel extends AppCompatActivity {
         buttonRight.setOnClickListener(v -> {
             Log.d("linesi", "" + i);
 
-            if (i + 1 == lines.length) {
+            if (i == lines.length) {
                 Intent intent1 = new Intent(Novel.this, GameActivity.class);
                 intent1.putExtra("tag", partNovel);
                 startActivity(intent1);
@@ -56,7 +55,7 @@ public class Novel extends AppCompatActivity {
             if (i + 1 < lines.length) {
                 i++;
                 textNovella.setText(lines[i]);
-                if (i + 2 == lines.length) {
+                if (i + 1 == lines.length) {
                     buttonRight.setText("Вернуться на карту");
                     //buttonRight.setBackground(getResources().getDrawable(R.drawable.button_slyle_stoke_yellow));
                     i++;
@@ -67,7 +66,7 @@ public class Novel extends AppCompatActivity {
 
 
         buttonLeft.setOnClickListener(v -> {
-            if (i < 0) {
+            if (i > 0) {
                 buttonRight.setText("вперёд");
                 //buttonRight.setBackground(getResources().getDrawable(R.drawable.button_slyle_stoke_blue));
                 i--;
@@ -84,7 +83,7 @@ public class Novel extends AppCompatActivity {
         try {
             inputStreamReader = new InputStreamReader(assetManager.open(tag));
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            Log.d("error", "inputStreamReader");
         }
 
         ArrayList<String> bufferArray = new ArrayList<>();
@@ -95,9 +94,9 @@ public class Novel extends AppCompatActivity {
                 bufferArray.add(line);
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            Log.d("error", "FileNotFoundException");
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.d("error", "IOException");
         }
 
         //String lines[] = readFile(quest.getTagButtonOne(partNovel.replaceAll("[^A-Za-z]",""))).split("\n");
