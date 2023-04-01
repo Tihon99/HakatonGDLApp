@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void startLK(View v){
+        sendNum();
         Intent intention = new Intent(this,lk.class);
         startActivity(intention);
     }
@@ -19,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intention = new Intent(this,Novel.class);
         startActivity(intention);
     }
-    public void sendNum(View v){
+    public void sendNum(){
         String value="10";
         Intent i = new Intent(this, lk.class);
         i.putExtra("key",value);
         startActivity(i);
     }
+
 }
