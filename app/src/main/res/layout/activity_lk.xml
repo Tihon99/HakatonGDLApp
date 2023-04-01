@@ -12,8 +12,8 @@
         android:id="@+id/textView"
         android:layout_width="148dp"
         android:layout_height="64dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
         android:linksClickable="false"
         android:text="@string/TextViewname"
         android:textColor="@color/myyellow"
@@ -27,11 +27,22 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:text="TextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/scores"
         android:textColor="@color/myyellow"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:text="TextView"
+        android:textColor="@color/myyellow"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
