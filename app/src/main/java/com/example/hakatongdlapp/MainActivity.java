@@ -18,9 +18,8 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
     public void startNovel(View v){
-        Intent intention = new Intent(this,Novel.class);
+        Intent intention = new Intent(this,ListNovelActivity.class);
         startActivity(intention);
-        sendTxt();
         finish();
     }
     public void sendNum(){
@@ -30,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         intent1.putExtras(data1);
         startActivity(intent1);
     }
-    public void sendTxt(){
-        Intent intent1 = new Intent (this, Novel.class);
+    /*public void sendTxt(){
+        Intent intent1 = new Intent (this, ListNovelActivity.class);
         Bundle data1 = new Bundle();
         data1.putString("tag","novel1.txt");
         intent1.putExtras(data1);
         startActivity(intent1);
-    }
+    }*/
 
 }
