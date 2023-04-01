@@ -22,11 +22,9 @@ public class lk extends AppCompatActivity {
     public void goback(View v){
         Intent intention = new Intent(this,MainActivity.class);
         startActivity(intention);
+        finish();
     }
-    public void startNovel2(View v){
-        Intent intention = new Intent(this,Novel.class);
-        startActivity(intention);
-    }
+
 
 
 }
