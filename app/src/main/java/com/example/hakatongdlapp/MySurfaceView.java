@@ -55,11 +55,12 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
             Pipe pipe2 = new Pipe(pipeWidth + 20, height - pipeHeight, pipeWidth, pipeHeight, canvas, pipeColor);
             Pipe pipe3 = new Pipe((pipeWidth + 20)*2, height - pipeHeight, pipeWidth, pipeHeight, canvas, pipeColor);
             holder.unlockCanvasAndPost(canvas);
+            //canvas.drawColor(R.color.bg_main);
             boolean win = false;
             while (runFlag) {
                 canvas = holder.lockCanvas();
                 if( canvas!= null) {
-                    canvas.drawColor(R.color.bg_main);
+                    canvas.drawColor(Color.WHITE);
                     Paint fontPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
                     fontPaint.setTextSize(60);
                     fontPaint.setTextAlign(Paint.Align.CENTER);
