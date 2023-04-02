@@ -56,7 +56,7 @@ public class Novel extends AppCompatActivity {
                 i++;
                 textNovella.setText(lines[i]);
                 if (i + 1 == lines.length) {
-                    buttonRight.setText("Вернуться на карту");
+                    buttonRight.setText("Пройти игру");
                     //buttonRight.setBackground(getResources().getDrawable(R.drawable.button_slyle_stoke_yellow));
                     i++;
                 }
