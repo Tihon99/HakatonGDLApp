@@ -33,7 +33,8 @@ public class lk extends AppCompatActivity {
         TextView score1 = (TextView) findViewById(R.id.scoreprint);
         score1.setText(score);
         person_name=findViewById(R.id.nameperson);
-       try {
+
+       /*try {
             FileOutputStream file1=openFileOutput("person_name.txt", MODE_PRIVATE);
             file1.close();
         } catch (FileNotFoundException e) {
@@ -41,7 +42,7 @@ public class lk extends AppCompatActivity {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        Dounloadname(person_name);
+        Dounloadname(person_name);*/
 
 
     }
@@ -53,7 +54,9 @@ public class lk extends AppCompatActivity {
     }
     public void Savename(View view){
     String person_namestr=person_name.getText().toString();
-        try {
+    ;
+
+        /*try {
             FileOutputStream file1=openFileOutput("person_name.txt", MODE_PRIVATE);
             file1.write(person_namestr.getBytes());
             file1.close();
@@ -63,7 +66,7 @@ public class lk extends AppCompatActivity {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
     public void Dounloadname(View view) {
         try {

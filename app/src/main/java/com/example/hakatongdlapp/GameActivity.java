@@ -20,27 +20,24 @@ import java.util.Scanner;
 
 public class GameActivity extends AppCompatActivity {
 
-
-    ImageButton ImageButtonotvet1;
+    /*ImageButton ImageButtonotvet1;
     int flag,combo_count,sum;
     int massive_otvetov[];
     private TextView Score;
     private TextView combo_count_view;
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId")*/
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
-        sum=0;
+        setContentView(R.layout.activity_game_touches);
+        /*sum=0;
         combo_count=1;
         flag=1;
-        massive_otvetov = new int[30];
+        massive_otvetov = new int[30];*/
     }
 
 
-    public void klickotvet(View view) {
+   /* public void klickotvet(View view) {
         Score=findViewById(R.id.score);
         combo_count_view=findViewById(R.id.combo_count);
         if(flag==1){
@@ -58,5 +55,5 @@ public class GameActivity extends AppCompatActivity {
 
 
 
-    }
+    }*/
 }
