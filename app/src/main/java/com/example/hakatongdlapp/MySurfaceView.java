@@ -1,5 +1,6 @@
 package com.example.hakatongdlapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -26,18 +27,16 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
     }
 
     class DrawThread extends Thread {
-        Random r = new Random();
-        Paint paint = new Paint();
         boolean runFlag = true;
         SurfaceHolder holder;
         Canvas canvas;
 
-        Integer[] colors = new Integer[] {Color.RED,  Color.YELLOW, Color.GREEN, Color.BLUE, Color.MAGENTA};
         public DrawThread(SurfaceHolder holder) {
             this.holder = holder;
         }
 
 
+        @SuppressLint("ResourceAsColor")
         @Override
         public void run() {
             super.run();
@@ -49,7 +48,6 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
             int count = 2;
 
             int side = 200;
-            //int sqColor = Color.rgb(r.nextInt(255), r.nextInt(255), r.nextInt(255));
             int sqColor = Color.rgb(0, 0, 255);
             int pipeColor = Color.rgb(255, 0, 0);
             Square square = new Square((int) (width-side)/2, (int) (height-side)/2, side, canvas, sqColor);
@@ -57,6 +55,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
             Pipe pipe2 = new Pipe(pipeWidth + 20, height - pipeHeight, pipeWidth, pipeHeight, canvas, pipeColor);
             Pipe pipe3 = new Pipe((pipeWidth + 20)*2, height - pipeHeight, pipeWidth, pipeHeight, canvas, pipeColor);
             holder.unlockCanvasAndPost(canvas);
+            canvas.drawColor(R.color.bg_main);
             boolean win = false;
             while (runFlag) {
                 canvas = holder.lockCanvas();
