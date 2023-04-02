@@ -22,6 +22,7 @@ public class lk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lk);
+
         String score;
         Intent intentReceived = getIntent();
         Bundle data = intentReceived.getExtras();
@@ -30,8 +31,11 @@ public class lk extends AppCompatActivity {
         }else{
             score = "ERROR";
         }
+
         TextView score1 = (TextView) findViewById(R.id.scoreprint);
         score1.setText(score);
+
+
         person_name=findViewById(R.id.nameperson);
 
        /*try {

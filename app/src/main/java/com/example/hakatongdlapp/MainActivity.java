@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendNum(){
         Intent intent1 = new Intent (this, lk.class);
         Bundle data1 = new Bundle();
-        data1.putString("key","restaurantUsername");
+        data1.putString("key","1");
         intent1.putExtras(data1);
         startActivity(intent1);
     }
