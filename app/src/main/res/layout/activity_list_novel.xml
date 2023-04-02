@@ -23,24 +23,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/text_button"
-            android:text="Teor 1" />
+            android:text="Техника безопасности"
+            android:textColor="@color/text_button" />
 
         <Button
             android:id="@+id/button_teor2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/text_button"
-            android:text="Teor 2" />
+            android:text="Регламент работы компании"
+            android:textColor="@color/text_button" />
 
         <Button
             android:id="@+id/button_teor3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/text_button"
-            android:text="Teor 3" />
+            android:text="Система управления проектами"
+            android:textColor="@color/text_button" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
