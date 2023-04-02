@@ -66,7 +66,7 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/interbold"
         android:onClick="startLK"
-        android:text="LK"
+        android:text="Личный кабинет"
         android:textColor="@color/text_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
